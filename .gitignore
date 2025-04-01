@@ -5,3 +5,10 @@
 *.toc
 *.fls
 *.fdb_latexmk
+*.bbl
+*.blg
+*.glo
+*.ist
+*.lof
+*.lot  
+*.nlo
