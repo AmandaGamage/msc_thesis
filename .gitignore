@@ -12,3 +12,8 @@
 *.lof
 *.lot  
 *.nlo
+*.bcf
+*.run.xml
+*.acn
+*.xdv
+*.blx.bib
