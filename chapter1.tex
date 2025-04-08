@@ -55,7 +55,7 @@ Effective \gls{cbrs} management relies on robust collision detection, yet tradit
 
 To address this, we propose a novel spectrum-sharing system that generates spectrogram images of collision scenarios using \gls{gan} \cite{6}, \gls{ddpm} \cite{7}, and \gls{vq-vae} \cite{8}. These images will train a \gls{cnn} to detect collisions and alert \gls{sas}. 
 
-We evaluate the generative models by comparing their impact on \gls{cnn} classification accuracy and data diversity. While \gls{gan}s and VAEs have been used to address data limitations, diffusion models have shown state-of-the-art results in natural image generation \cite{9}. However, a direct comparison of \gls{gan}s, \gls{ddpm}, and \gls{vq-vae} for waveform visualization is unexplored.  
+We evaluate the generative models by comparing their impact on \gls{cnn} classification accuracy and data diversity. Then we simulate a \gls {cbrs} environment using MATLAB which uses \gls{drl} for instead of a \gls{sas} to assign channels to users in a rapidly changing environment. While \gls{gan}s and VAEs have been used to address data limitations, diffusion models have shown state-of-the-art results in natural image generation \cite{9}. However, a direct use generative AIs with \gls{cnn} for interference detection and \gls{drl} for channel allocation is unexplored.  
 
 This work employs conditional \gls{gan}, conditional \gls{ddpm}, and \gls{vq-vae} models to generate visualized \gls{cbrs} datasets and compares their performance based on \gls{cnn} classification accuracy.  
 
@@ -64,6 +64,7 @@ The key contributions of this study are:
     \item Introduce a scalable and generalizable spectrum-sharing system for a dynamic \gls{cbrs} environment.
     \item Use Generative models to generate visualized waveforms of a \gls{cbrs} system.
     \item Make a quantitative comparison of three of the most popular generative models currently available, in generating frequency spectrogram images.
+    \item Use \gls{drl} based channel allocation system with a \gls{cnn} based collision detection system to manage the \gls{cbrs} environment.
 \end{enumerate}
 
 

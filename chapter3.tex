@@ -34,4 +34,6 @@ The \gls{gan} model's high \gls{fid} scores across many classes suggest model co
 \centering
 \end{figure}
 The \gls{pca} projection in Figure 3.3 indicate that real and generated spectrograms form separate yet overlapping clusters, suggesting that generative models do not simply reproduce existing samples but introduce new variations. The spread of generated samples in the \gls{pca} projection indicates that the models create additional variations, potentially improving classifier generalization. The \gls{pca} analysis provides an independent validation of data distribution differences, confirming that generative models add meaningful diversity.
+However, the \gls{pca} projection also shows that the \gls{gan} model's generated samples are more clustered and less spread out than the other two models, indicating that the \gls{gan} model may not be as effective at generating diverse samples as the \gls{ddpm} and \gls{vq-vae} models. The \gls{ddpm} model's generated samples are more spread out than the \gls{vq-vae} model's, suggesting that the \gls{ddpm} model may be more effective at generating diverse samples than the \gls{vq-vae} model.
+
 
