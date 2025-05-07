@@ -5,13 +5,20 @@
 \end{centering}
 
 \begin{flushright}
-    Name  \\
-    Department of ... \\
+     Amanda Sheron Gamage \\
+    School of Electrical and Electronic Engineering \\
     The Graduate School, Yonsei University
 \end{flushright}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Dynamic spectrum sharing is a critical component in the efficient utilization of wireless communication resources, particularly within the Citizens Broadband Radio Service (CBRS) band. This thesis presents a novel end-to-end AI-driven framework for intelligent spectrum access that integrates generative modeling, supervised classification, and deep reinforcement learning (DRL). The system is designed to operate as a learning-based alternative to traditional Spectrum Access Systems (SAS), capable of real-time spectrum occupancy detection and autonomous channel decision-making.
 
-\blfootnote{Keywords: Keyword 1, Keyword 2, Keyword 3}
+To address the challenge of limited labeled data for training, we employ state-of-the-art generative models—Generative Adversarial Networks (GAN), Vector Quantized Variational Autoencoders (VQ-VAE), and Denoising Diffusion Probabilistic Models (DDPM)—to synthesize high-fidelity spectrogram images representing various CBRS scenarios, including interference and collision cases. These synthetic spectrograms are used to train a convolutional neural network (CNN) for binary classification of collision events. Experimental evaluations demonstrate that DDPM achieves the best performance in terms of both visual fidelity and classification accuracy, significantly outperforming GAN and VQ-VAE.
+
+A MATLAB-based CBRS simulation environment is developed, where a DRL agent, trained using a Deep Q-Network (DQN), interacts with the spectrum environment. The agent receives channel occupancy predictions from the CNN and learns to avoid collisions with Incumbent and Priority Access License (PAL) users while maximizing throughput on General Authorized Access (GAA) channels. The results show that the agent learns a robust access policy, effectively adapting to dynamic and uncertain channel conditions.
+
+The thesis concludes that the integration of generative AI, deep classification, and DRL offers a scalable and intelligent solution to spectrum sharing in CBRS. The modular architecture, high-performance learning models, and simulation results provide a foundation for future extensions, including multi-channel scaling, real-time deployment, and unsupervised learning approaches for spectrum management.
+
+
+\blfootnote{Keywords: Citizens Broadband Radio Service (CBRS), Generative Adversarial Networks (GAN), Vector Quantized Variational Autoencoders (VQ-VAE), Denoising Diffusion Probabilistic Models (DDPM), Deep Q-Network (DQN), Spectrum Access System (SAS), Dynamic Spectrum Sharing, Reinforcement Learning, Convolutional Neural Network (CNN).}
 %\pagenumbering{gobble}  %remove page number on summary page
 
