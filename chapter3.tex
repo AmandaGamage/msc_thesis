@@ -66,3 +66,56 @@ However, the \gls{pca} projection also shows that the \gls{gan} model's generate
     
     Table 1 depicts the average classification accuracy and the \gls{fid} scores of the spectrogram images, for the three different models and the original data.
     Although the average accuracy is not far apart for the three generative models, due to the lack of diversity of the generated data by the \gls{gan}, and the noisy images by \gls{vq-vae} we can conclude that the \gls{ddpm} performs better than the \gls{gan} or \gls{vq-vae} when generating spectrogram images for a robust spectrum-sharing system.
+
+    After calculating the classification accuracy we trained four \gls{dqn} agents using the generated data from the three models and the original data. The \gls{dqn} agents were trained for 1000 episodes. We then evaluated the trained \gls{dqn}agent based on how well the agent was able to avoid collisions using the CNN classifications of the four models in the simulated MATLAB \gls{cbrs} environment.
+
+    
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/collision_count_ddpm.jpg}
+        \caption{DDPM}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/collision_count_gan.jpg}
+        \caption{GAN}
+    \end{subfigure}
+
+    \vspace{0.5cm} % space between rows
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/collision_count_vqvae.jpg}
+        \caption{VQ-VAE}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/collision_count_original.jpg}
+        \caption{Original dataset}
+    \end{subfigure}
+
+    \caption{Performance of DQN agents trained with the four different datasets}
+\end{figure}
+
+\begin{table}[ht]
+    \centering
+    \caption{Comparison of Generative Models in Terms of Mean Reward and Collision Rate}
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Model} & \textbf{Mean Reward} & \textbf{Mean Collisions per Episode} \\
+    \hline
+    DDPM     & 79.65   & 0.00    \\
+    GAN      & 86.78   & 0.74    \\
+    VQ-VAE   & 77.62   & 12.60   \\
+    Original & 78.40   & 17.44   \\
+    \hline
+    \end{tabular}
+    \label{tab:reward_collision_comparison}
+\end{table}
+   
+    Figure 3.5 and Table 3.1 depicts the performance of DQN agents trained with datasets generated using DDPM, GAN, VQ-VAE, and the original dataset. The DDPM-trained agent exhibits highly stable behavior, achieving a consistently high reward across episodes with zero collisions—indicating excellent generalization and safe spectrum selection. The GAN-based agent demonstrates the highest average reward among all models; however, it incurs occasional collisions, suggesting a trade-off between performance and safety. In contrast, the VQ-VAE-trained agent shows high variability in both rewards and collisions, implying that its synthetic data may introduce noise or uncertainty, leading to less reliable policy learning. Lastly, the agent trained on the original dataset performs moderately well in terms of reward but experiences the highest average collision rate, underscoring the benefit of augmenting training with high-quality synthetic data like that from DDPM. These results collectively highlight that generative models, especially DDPM, can significantly enhance the safety and performance of DQN agents in dynamic spectrum access scenarios.
+
