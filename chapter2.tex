@@ -5,7 +5,7 @@
 
 The dataset utilized for training our generative models and the \gls{cnn} model was obtained from the research conducted by \cite{5} called the ViC dataset. This dataset comprises 2400 images belonging to 12 different scenarios for two channels. 
 
-Each channel can have four possible states: empty, primary (RADAR), secondary (LTE), and collision. Since this spectrum-sharing system manages two tiers of users and two channels, there are 16 possible cases depending on how each user occupies each channel. However, four cases are discarded since the  \gls{cbsd} is assumed to use only one channel simultaneously. Thus, the two channels could be in 12 different states. Figure 2.1 illustrates the spectrogram images corresponding to the channel states across the 12 classes. We used 2000 images to train the generative models and the other 400 for the \gls{cnn} training. 
+Each channel in the system can be in one of four states: unused (empty), occupied by a primary user (RADAR), occupied by a secondary user (LTE), or experiencing interference (collision). Since the system involves two channels and two tiers of users, this results in 16 possible channel usage combinations. However, four of these combinations are excluded because the \gls{cbsd} is designed to operate on only one channel at a time. Therefore, the channels can exhibit 12 valid state configurations. Figure 2.1 presents the spectrograms that correspond to these 12 distinct channel states. A dataset of 2000 images was used to train the generative models, while an additional 400 images were used for training the CNN classifier.
 
 The class names presented in Figure 2.1 will be used throughout this paper when discussing the results. Waveforms were visualized using  Short Time Fourier Transform (STFT) with a size of $64 \times 64 $ matrix.
 
@@ -29,7 +29,7 @@ The \gls{vq-vae} is a generative model that combines continuous latent represent
 \end{figure}
 
 
-In the architecture of the conditional \gls{vq-vae} we used, the encoder is a \gls{cnn} designed to extract features from the input grayscale images. It has three convolutional layers to progressively reduce spatial dimensions while increasing the number of feature channels. The encoder also incorporates a residual stack, which consists of multiple residual layers to enhance feature extraction by allowing information to bypass intermediate transformations, thereby improving gradient flow and capturing complex patterns.
+In the architecture of the conditional \gls{vq-vae} we used, the encoder is a \gls{cnn} designed to extract features from the input grayscale images.It consists of three convolutional layers that gradually decrease the spatial resolution while expanding the depth of feature maps. The encoder also incorporates a residual stack, which consists of multiple residual layers to enhance feature extraction by allowing information to bypass intermediate transformations, thereby improving gradient flow and capturing complex patterns.
 
 After encoding, the latent representation is passed through a 1x1 convolution layer to adjust the feature dimensions to match the input requirements of the vector quantizer.  This mapping is performed using the Euclidean distance between the latent vectors and the codebook embeddings. To ensure effective learning, the vector quantizer minimizes a combination of the reconstruction loss, a codebook commitment loss, and a latent quantization loss.
 The loss function can be expressed as follows:
@@ -46,7 +46,7 @@ We implemented a conditional \gls{vq-vae} model, enabling class-specific image g
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\gls{gan}}
 
-\gls{gan}s, consist of two neural networks: a generator that creates data samples and a discriminator that evaluates their authenticity. The generator and discriminator engage in a game-theoretic scenario where the generator aims to produce indistinguishable fake data, while the discriminator strives to identify real from generated data. This adversarial process allows \gls{gan}s to produce highly realistic images, audio, and other data forms \cite{10}. The loss functions used by the Generator and the Discriminator can be written as follows. Figure 2.3 illustrates this architecture.
+\gls{gan}s, are composed of two neural components: a generator that synthesizes data samples and a discriminator that assesses their authenticity. These two models are trained in an adversarial framework, where the generator attempts to produce data that the discriminator cannot distinguish from real data, while the discriminator learns to correctly differentiate between real and generated samples. Through this competitive training, GANs are capable of generating highly realistic images, audio, and other types of data \cite{10}. The corresponding loss functions for the generator and discriminator are expressed below. Figure 2.3 illustrates this architecture.
 \begin{figure}[h]
 \includegraphics[width=9cm]{figures/gan.png}
 \centering
@@ -75,7 +75,9 @@ We generated 1200 images with 100 images per class for the twelve classes and us
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\gls{ddpm}}
 
-\gls{ddpm}s are generative models designed for image generation using variational inference. They operate through a Markovian process that involves a finite sequence of steps, denoted as $T$. Training involves two main stages: the forward process, where noise is added to data in a controlled manner, and the reverse process, where the model learns to denoise this data step-by-step. Each step in this process acts as a denoising operation, aiming to refine the image quality progressively\cite{7}. Figure 2.5 illustrates the diffusion process of the \gls{ddpm}. 
+\gls{ddpm}s are generative models designed for image generation using variational inference. They operate through a Markovian process that involves a finite sequence of steps, denoted as $T$.
+The training process consists of two key phases: the forward phase, which gradually introduces noise to the data in a systematic way, and the reverse phase, where the model is trained to progressively remove the noise and reconstruct the original data.
+Each step in this process acts as a denoising operation, aiming to refine the image quality progressively\cite{7}. Figure 2.5 illustrates the diffusion process of the \gls{ddpm}. 
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{figures/ddpm.png}
@@ -112,7 +114,8 @@ After training the model, we used the trained weights to generate 1200 images wi
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\gls{cnn}}
-\gls{cnn}s are a type of deep learning model widely used for image analysis tasks. They are designed to automatically and adaptively learn spatial hierarchies of features from input data through layers of convolutional filters. These filters detect patterns such as edges, textures, and more complex features in the images, making \gls{cnn}s highly effective for tasks like image classification.
+\gls{cnn}s are a class of deep learning models commonly used for analyzing images. They automatically learn spatial feature hierarchies from input data by applying multiple layers of convolutional filters.
+These filters detect patterns such as edges, textures, and more complex features in the images, making \gls{cnn}s highly effective for tasks like image classification.
 
 
 We trained a \gls{cnn} model that can detect collision scenarios using the generated spectrogram data from the three models. 

@@ -38,9 +38,9 @@ However, the \gls{pca} projection also shows that the \gls{gan} model's generate
 
 
 \begin{figure}[t]
-    \includegraphics[width=8.5cm]{figures/Figure_20 (1).png}
+    \includegraphics[width=8.5cm]{figures/graph_1.png}
     \centering
-    \caption{Class-wise classification accuracy for \gls{gan}, \gls{ddpm} and \gls{vq-vae} generated data}
+    \caption{Class-wise classification accuracy for \gls{gan}, \gls{ddpm}, \gls{vq-vae} generated data with original dataset}
     \centering
     \end{figure}
     
@@ -59,14 +59,20 @@ However, the \gls{pca} projection also shows that the \gls{gan} model's generate
             \hline
             3 & \gls{vq-vae} & 71.3\%  & 1.580\\
             \hline
+            4 & Original dataset & 92.75\%  & - \\
+            \hline
         \end{tabular}
-        \caption{Average accuracy for \gls{gan}, \gls{ddpm}, and Original data}
+        \caption{Average accuracy for \gls{gan}, \gls{ddpm}, \gls{vq-vae} and Original data}
         \label{tab:average_accuracy}
     \end{table}
     
     Table 1 depicts the average classification accuracy and the \gls{fid} scores of the spectrogram images, for the three different models and the original data.
     Although the average accuracy is not far apart for the three generative models, due to the lack of diversity of the generated data by the \gls{gan}, and the noisy images by \gls{vq-vae} we can conclude that the \gls{ddpm} performs better than the \gls{gan} or \gls{vq-vae} when generating spectrogram images for a robust spectrum-sharing system.
-
+    
+    We can also notice that the classification accuracy for the original dataset is much higher than the other three models. This is expected since the original dataset is a real dataset, and the \gls{cnn}  model was trained on it. However, the \gls{ddpm} model's generated data is not far behind the original dataset, indicating that the \gls{ddpm} 
+    model can generate high-quality spectrogram images that can be used to train a robust spectrum-sharing system. But when these models were directed to detect collisions in the simulated \gls{cbrs} environment all three generative models performed better than the original dataset. This is because the original dataset was not diverse enough to train a robust \gls{cnn} model.
+    We will discuss this later in the chapter.
+    
     After calculating the classification accuracy we trained four \gls{dqn} agents using the generated data from the three models and the original data. The \gls{dqn} agents were trained for 1000 episodes. We then evaluated the trained \gls{dqn}agent based on how well the agent was able to avoid collisions using the CNN classifications of the four models in the simulated MATLAB \gls{cbrs} environment.
 
     
