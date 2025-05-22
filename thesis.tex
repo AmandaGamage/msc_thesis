@@ -10,7 +10,7 @@
 \usepackage[bibencoding=utf8,backend=biber,style=numeric,sorting=none,bibstyle=phys]{biblatex} 
 \addbibresource{references.bib}  
 \makeglossaries
-\input{acronyms}
+
 % https://tex.stackexchange.com/questions/47576/combining-ifxetex-and-ifluatex-with-the-logical-or-operation
 \usepackage{ifxetex,ifluatex}
 
@@ -193,7 +193,7 @@
 %%%%%%%%%%%%%%%%%%%%%%
 % Start of Document
 %%%%%%%%%%%%%%%%%%%%%%
-
+\input{acronyms.tex} 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -355,11 +355,11 @@
 %%%%%%%%%%%%%%%%
 
 \input{chapter5.tex}
-
 %%%%%%%%%%%%%%%%
 % References
 %%%%%%%%%%%%%%%%
 % \nocites
+
 
 \setlength\bibitemsep{\baselineskip}  %manually set separataion betwen items in bibliography to double space
 
@@ -367,17 +367,20 @@
 
 \printbibliography[title={References}]
 
+
+
+
 \addcontentsline{toc}{chapter}{References}  %add References section to Table of Contents
 
-%%%%%%%%%%%%%%%%
-% Summary (Korean)
-%%%%%%%%%%%%%%%%
 
 % To fix incorrect incorrect page numbering in ToC, add cleardoublepage and phantomsection
 % https://tex.stackexchange.com/questions/23499/incorrect-bookmarks-and-page-number-in-table-of-contents
+
+
+
+
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{국문초록}  %add References section to Table of Contents
-
-
+\input{abstract-kor.tex}
 \end{document}

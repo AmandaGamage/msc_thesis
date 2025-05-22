@@ -1,0 +1,756 @@
+\glsdefs@newdocentry{cbrs}%
+{%
+name={\acronymfont {\glsentryshort {cbrs}}},%
+sort={CBRS},%
+type={acronym},%
+first={CBRS},%
+firstplural={CBRSs},%
+text={CBRS},%
+plural={CBRSs},%
+description={Citizens Broadband Radio Service},%
+descriptionplural={Citizens Broadband Radio Service},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Citizens Broadband Radio Service},%
+longplural={Citizens Broadband Radio Services},%
+short={CBRS},%
+shortplural={CBRSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gan}%
+{%
+name={\acronymfont {\glsentryshort {gan}}},%
+sort={GAN},%
+type={acronym},%
+first={GAN},%
+firstplural={GANs},%
+text={GAN},%
+plural={GANs},%
+description={Generative Adversarial Network},%
+descriptionplural={Generative Adversarial Network},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Generative Adversarial Network},%
+longplural={Generative Adversarial Networks},%
+short={GAN},%
+shortplural={GANs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dsa}%
+{%
+name={\acronymfont {\glsentryshort {dsa}}},%
+sort={DSA},%
+type={acronym},%
+first={DSA},%
+firstplural={DSAs},%
+text={DSA},%
+plural={DSAs},%
+description={Dynamic Spectrum Access},%
+descriptionplural={Dynamic Spectrum Access},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Dynamic Spectrum Access},%
+longplural={Dynamic Spectrum Accesss},%
+short={DSA},%
+shortplural={DSAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vq-vae}%
+{%
+name={\acronymfont {\glsentryshort {vq-vae}}},%
+sort={VQ-VAE},%
+type={acronym},%
+first={VQ-VAE},%
+firstplural={VQ-VAEs},%
+text={VQ-VAE},%
+plural={VQ-VAEs},%
+description={Vector Quantized Variational Autoencoder},%
+descriptionplural={Vector Quantized Variational Autoencoder},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Vector Quantized Variational Autoencoder},%
+longplural={Vector Quantized Variational Autoencoders},%
+short={VQ-VAE},%
+shortplural={VQ-VAEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cnn}%
+{%
+name={\acronymfont {\glsentryshort {cnn}}},%
+sort={CNN},%
+type={acronym},%
+first={CNN},%
+firstplural={CNNs},%
+text={CNN},%
+plural={CNNs},%
+description={Convolutional Neural Network},%
+descriptionplural={Convolutional Neural Network},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Convolutional Neural Network},%
+longplural={Convolutional Neural Networks},%
+short={CNN},%
+shortplural={CNNs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fid}%
+{%
+name={\acronymfont {\glsentryshort {fid}}},%
+sort={FID},%
+type={acronym},%
+first={FID},%
+firstplural={FIDs},%
+text={FID},%
+plural={FIDs},%
+description={Fréchet Inception Distance},%
+descriptionplural={Fréchet Inception Distance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fréchet Inception Distance},%
+longplural={Fréchet Inception Distances},%
+short={FID},%
+shortplural={FIDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ddpm}%
+{%
+name={\acronymfont {\glsentryshort {ddpm}}},%
+sort={DDPM},%
+type={acronym},%
+first={DDPM},%
+firstplural={DDPMs},%
+text={DDPM},%
+plural={DDPMs},%
+description={Denoising Diffusion Probabilistic Model},%
+descriptionplural={Denoising Diffusion Probabilistic Model},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Denoising Diffusion Probabilistic Model},%
+longplural={Denoising Diffusion Probabilistic Models},%
+short={DDPM},%
+shortplural={DDPMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pal}%
+{%
+name={\acronymfont {\glsentryshort {pal}}},%
+sort={PAL},%
+type={acronym},%
+first={PAL},%
+firstplural={PALs},%
+text={PAL},%
+plural={PALs},%
+description={Priority Access License},%
+descriptionplural={Priority Access License},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Priority Access License},%
+longplural={Priority Access Licenses},%
+short={PAL},%
+shortplural={PALs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gaa}%
+{%
+name={\acronymfont {\glsentryshort {gaa}}},%
+sort={GAA},%
+type={acronym},%
+first={GAA},%
+firstplural={GAAs},%
+text={GAA},%
+plural={GAAs},%
+description={General Authorized Access},%
+descriptionplural={General Authorized Access},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={General Authorized Access},%
+longplural={General Authorized Accesss},%
+short={GAA},%
+shortplural={GAAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fcc}%
+{%
+name={\acronymfont {\glsentryshort {fcc}}},%
+sort={FCC},%
+type={acronym},%
+first={FCC},%
+firstplural={FCCs},%
+text={FCC},%
+plural={FCCs},%
+description={Federal Communications Commission},%
+descriptionplural={Federal Communications Commission},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Federal Communications Commission},%
+longplural={Federal Communications Commissions},%
+short={FCC},%
+shortplural={FCCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sas}%
+{%
+name={\acronymfont {\glsentryshort {sas}}},%
+sort={SAS},%
+type={acronym},%
+first={SAS},%
+firstplural={SASs},%
+text={SAS},%
+plural={SASs},%
+description={Spectrum Access System},%
+descriptionplural={Spectrum Access System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Spectrum Access System},%
+longplural={Spectrum Access Systems},%
+short={SAS},%
+shortplural={SASs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{jdl}%
+{%
+name={\acronymfont {\glsentryshort {jdl}}},%
+sort={JDL},%
+type={acronym},%
+first={JDL},%
+firstplural={JDLs},%
+text={JDL},%
+plural={JDLs},%
+description={Joint Distribution Learning},%
+descriptionplural={Joint Distribution Learning},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Joint Distribution Learning},%
+longplural={Joint Distribution Learnings},%
+short={JDL},%
+shortplural={JDLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{edm}%
+{%
+name={\acronymfont {\glsentryshort {edm}}},%
+sort={EDM},%
+type={acronym},%
+first={EDM},%
+firstplural={EDMs},%
+text={EDM},%
+plural={EDMs},%
+description={Elucidated Diffusion Models},%
+descriptionplural={Elucidated Diffusion Models},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Elucidated Diffusion Models},%
+longplural={Elucidated Diffusion Modelss},%
+short={EDM},%
+shortplural={EDMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{api}%
+{%
+name={\acronymfont {\glsentryshort {api}}},%
+sort={API},%
+type={acronym},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{usrp}%
+{%
+name={\acronymfont {\glsentryshort {usrp}}},%
+sort={USRP},%
+type={acronym},%
+first={USRP},%
+firstplural={USRPs},%
+text={USRP},%
+plural={USRPs},%
+description={Universal Software Radio Peripheral},%
+descriptionplural={Universal Software Radio Peripheral},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Universal Software Radio Peripheral},%
+longplural={Universal Software Radio Peripherals},%
+short={USRP},%
+shortplural={USRPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cbsd}%
+{%
+name={\acronymfont {\glsentryshort {cbsd}}},%
+sort={CBSD},%
+type={acronym},%
+first={CBSD},%
+firstplural={CBSDs},%
+text={CBSD},%
+plural={CBSDs},%
+description={Citizens Broadband Radio Service Device},%
+descriptionplural={Citizens Broadband Radio Service Device},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Citizens Broadband Radio Service Device},%
+longplural={Citizens Broadband Radio Service Devices},%
+short={CBSD},%
+shortplural={CBSDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cbam}%
+{%
+name={\acronymfont {\glsentryshort {cbam}}},%
+sort={CBAM},%
+type={acronym},%
+first={CBAM},%
+firstplural={CBAMs},%
+text={CBAM},%
+plural={CBAMs},%
+description={Convolutional Block Attention Module},%
+descriptionplural={Convolutional Block Attention Module},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Convolutional Block Attention Module},%
+longplural={Convolutional Block Attention Modules},%
+short={CBAM},%
+shortplural={CBAMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gap}%
+{%
+name={\acronymfont {\glsentryshort {gap}}},%
+sort={GAP},%
+type={acronym},%
+first={GAP},%
+firstplural={GAPs},%
+text={GAP},%
+plural={GAPs},%
+description={Global Average Pooling},%
+descriptionplural={Global Average Pooling},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Global Average Pooling},%
+longplural={Global Average Poolings},%
+short={GAP},%
+shortplural={GAPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fc}%
+{%
+name={\acronymfont {\glsentryshort {fc}}},%
+sort={FC},%
+type={acronym},%
+first={FC},%
+firstplural={FCs},%
+text={FC},%
+plural={FCs},%
+description={Fully Connected},%
+descriptionplural={Fully Connected},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fully Connected},%
+longplural={Fully Connecteds},%
+short={FC},%
+shortplural={FCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pca}%
+{%
+name={\acronymfont {\glsentryshort {pca}}},%
+sort={PCA},%
+type={acronym},%
+first={PCA},%
+firstplural={PCAs},%
+text={PCA},%
+plural={PCAs},%
+description={Principal Component Analysis},%
+descriptionplural={Principal Component Analysis},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Principal Component Analysis},%
+longplural={Principal Component Analysiss},%
+short={PCA},%
+shortplural={PCAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tvws}%
+{%
+name={\acronymfont {\glsentryshort {tvws}}},%
+sort={TVWS},%
+type={acronym},%
+first={TVWS},%
+firstplural={TVWSs},%
+text={TVWS},%
+plural={TVWSs},%
+description={TV White Spaces},%
+descriptionplural={TV White Spaces},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={TV White Spaces},%
+longplural={TV White Spacess},%
+short={TVWS},%
+shortplural={TVWSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sibi}%
+{%
+name={\acronymfont {\glsentryshort {sibi}}},%
+sort={SIBI},%
+type={acronym},%
+first={SIBI},%
+firstplural={SIBIs},%
+text={SIBI},%
+plural={SIBIs},%
+description={System Information Block},%
+descriptionplural={System Information Block},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={System Information Block},%
+longplural={System Information Blocks},%
+short={SIBI},%
+shortplural={SIBIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mnc}%
+{%
+name={\acronymfont {\glsentryshort {mnc}}},%
+sort={MNC},%
+type={acronym},%
+first={MNC},%
+firstplural={MNCs},%
+text={MNC},%
+plural={MNCs},%
+description={Mobile Network Code},%
+descriptionplural={Mobile Network Code},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Mobile Network Code},%
+longplural={Mobile Network Codes},%
+short={MNC},%
+shortplural={MNCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{itu}%
+{%
+name={\acronymfont {\glsentryshort {itu}}},%
+sort={ITU},%
+type={acronym},%
+first={ITU},%
+firstplural={ITUs},%
+text={ITU},%
+plural={ITUs},%
+description={International Telecommunication Union},%
+descriptionplural={International Telecommunication Union},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={International Telecommunication Union},%
+longplural={International Telecommunication Unions},%
+short={ITU},%
+shortplural={ITUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lsa}%
+{%
+name={\acronymfont {\glsentryshort {lsa}}},%
+sort={LSA},%
+type={acronym},%
+first={LSA},%
+firstplural={LSAs},%
+text={LSA},%
+plural={LSAs},%
+description={Licensed Shared Access},%
+descriptionplural={Licensed Shared Access},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Licensed Shared Access},%
+longplural={Licensed Shared Accesss},%
+short={LSA},%
+shortplural={LSAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{drl}%
+{%
+name={\acronymfont {\glsentryshort {drl}}},%
+sort={DRL},%
+type={acronym},%
+first={DRL},%
+firstplural={DRLs},%
+text={DRL},%
+plural={DRLs},%
+description={Deep Reinforcement Learning},%
+descriptionplural={Deep Reinforcement Learning},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Deep Reinforcement Learning},%
+longplural={Deep Reinforcement Learnings},%
+short={DRL},%
+shortplural={DRLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dqn}%
+{%
+name={\acronymfont {\glsentryshort {dqn}}},%
+sort={DQN},%
+type={acronym},%
+first={DQN},%
+firstplural={DQNs},%
+text={DQN},%
+plural={DQNs},%
+description={Deep Q-Network},%
+descriptionplural={Deep Q-Network},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Deep Q-Network},%
+longplural={Deep Q-Networks},%
+short={DQN},%
+shortplural={DQNs},%
+counter={page},%
+parent={},%
+%
+}%
+

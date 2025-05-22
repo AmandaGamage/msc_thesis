@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[acronym]{glossaries}
+\makeglossaries
+\input{acronyms.tex}
+
+\begin{document}
+
+\glsaddall  % Force all acronyms to appear
+
+\section*{Acronyms}
+\printglossary[type=\acronymtype, title=Acronyms]
+
+\section{Introduction}
+We test with \gls{cbrs}, \gls{gan}, and \gls{ddpm}.
+
+\end{document}

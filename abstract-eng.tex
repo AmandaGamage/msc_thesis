@@ -10,15 +10,30 @@
     The Graduate School, Yonsei University
 \end{flushright}
 
-Dynamic spectrum sharing is a critical component in the efficient utilization of wireless communication resources, particularly within the Citizens Broadband Radio Service (CBRS) band. This thesis presents a novel end-to-end AI-driven framework for intelligent spectrum access that integrates generative modeling, supervised classification, and deep reinforcement learning (DRL). The system is designed to operate as a learning-based alternative to traditional Spectrum Access Systems (SAS), capable of real-time spectrum occupancy detection and autonomous channel decision-making.
+Dynamic spectrum sharing is a critical component in the efficient utilization of wireless communication resources, particularly within the Citizens Broadband Radio Service (CBRS) band. This thesis presents a novel end-to-end AI-driven framework for intelligent spectrum access that integrates generative modeling, supervised classification, and deep reinforcement learning (DRL). The system is designed to operate as a learning-based alternative to traditional Spectrum Access Systems (SAS), 
+capable of real-time spectrum occupancy detection and autonomous channel decision-making.
 
-To address the challenge of limited labeled data for training, we employ three types of generative AI models—Generative Adversarial Networks (GAN), Vector Quantized Variational Autoencoders (VQ-VAE), and Denoising Diffusion Probabilistic Models (DDPM)—to synthesize high-fidelity spectrogram images representing various CBRS scenarios, including interference and collision cases. These synthetic spectrograms are used to train a convolutional neural network (CNN) for binary classification of collision events. Experimental evaluations demonstrate that DDPM displays the best performance in terms of both visual fidelity and classification accuracy, significantly outperforming GAN and VQ-VAE.
+To address the challenge of limited labeled data for training, we employ three types of generative AI models—Generative Adversarial Networks (GAN), 
+Vector Quantized Variational Autoencoders (VQ-VAE), and Denoising Diffusion Probabilistic Models (DDPM)—to synthesize high-fidelity spectrogram images 
+representing various CBRS scenarios, including interference and collision cases. These synthetic spectrograms are used to train a convolutional neural network (CNN) 
+for binary classification of collision events. Experimental evaluations demonstrate that DDPM displays the best performance in terms of both visual fidelity 
+and classification accuracy, significantly outperforming GAN and VQ-VAE.
 
-A MATLAB-based CBRS simulation environment is developed, where a DRL agent, trained using a Deep Q-Network (DQN), interacts with the spectrum environment. The agent receives channel occupancy predictions from the CNN and learns to avoid collisions with Incumbent and Priority Access License (PAL) users while maximizing throughput on General Authorized Access (GAA) channels. Quantitative results show that the DQN agent trained with DDPM-generated data achieved a mean reward of 79.65 with zero collisions per episode, indicating safe and effective channel selection. In comparison, the GAN-trained agent achieved a higher reward of 86.78 but with a small number of collisions (0.74 per episode), while the VQ-VAE and original dataset agents suffered from higher collision rates (12.6 and 17.44 per episode, respectively), despite lower or comparable rewards. These findings highlight the role of generative model quality in ensuring both high performance and operational safety in spectrum access.
+A MATLAB-based CBRS simulation environment is developed, where a DRL agent, trained using a Deep Q-Network (DQN), interacts with the spectrum environment. 
+The agent receives channel occupancy predictions from the CNN and learns to avoid collisions with Incumbent and Priority Access License (PAL) users while
+ maximizing throughput on General Authorized Access (GAA) channels. Quantitative results show that the DQN agent trained with DDPM-generated data achieved 
+ a mean reward of 79.65 with zero collisions per episode, indicating safe and effective channel selection. In comparison, the GAN-trained agent achieved a 
+ higher reward of 86.78 but with a small number of collisions (0.74 per episode), while the VQ-VAE and original dataset agents suffered from higher collision 
+ rates (12.6 and 17.44 per episode, respectively), despite lower or comparable rewards. These findings highlight the role of generative model quality in ensuring 
+ both high performance and operational safety in spectrum access.
 
-The thesis concludes that the integration of generative AI, deep classification, and DRL offers a scalable and intelligent solution to spectrum sharing in CBRS. The modular architecture, high-performance learning models, and simulation results provide a foundation for future extensions, including multi-channel scaling, real-time deployment, and unsupervised learning approaches for spectrum management.
+The thesis concludes that the integration of generative AI, deep classification, and DRL offers a scalable and intelligent solution to spectrum sharing in CBRS. 
+The modular architecture, high-performance learning models, and simulation results provide a foundation for future extensions, including multi-channel scaling, 
+real-time deployment, and unsupervised learning approaches for spectrum management.
 
 
-\blfootnote{Keywords: Citizens Broadband Radio Service (CBRS), Generative Adversarial Networks (GAN), Vector Quantized Variational Autoencoders (VQ-VAE), Denoising Diffusion Probabilistic Models (DDPM), Deep Q-Network (DQN), Spectrum Access System (SAS), Dynamic Spectrum Sharing, Reinforcement Learning, Convolutional Neural Network (CNN).}
+\blfootnote{Keywords: Citizens Broadband Radio Service (CBRS), Generative Adversarial Networks (GAN), Vector Quantized Variational Autoencoders (VQ-VAE), 
+Denoising Diffusion Probabilistic Models (DDPM), Deep Q-Network (DQN), Spectrum Access System (SAS), Dynamic Spectrum Sharing, Reinforcement Learning, 
+Convolutional Neural Network (CNN).}
 %\pagenumbering{gobble}  %remove page number on summary page
 
